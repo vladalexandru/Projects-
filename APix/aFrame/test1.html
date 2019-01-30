@@ -1,0 +1,21 @@
+<!-- include A-Frame obviously -->
+<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+<!-- include ar.js for A-Frame -->
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden; height:60px;'>
+
+  <a-scene embedded arjs='trackingMethod: best;'>
+        <a-assets>
+      <a-asset-item id="plain" src="./Models/Plain/scene.gltf"></a-asset-item>
+      </a-assets>
+      <a-anchor hit-testing-enabled='true'>
+    
+      <!-- use your gltf model -->
+      <a-entity gltf-model="#plain" scale="0.025 0.025 0.025" rotation="90 0 180"></a-entity>
+
+      </a-anchor>
+
+      <!-- Define a static camera -->
+      <a-camera-static/>
+  </a-scene>
+</body>

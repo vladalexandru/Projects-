@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>HeGe Fitting Room</title>
+		<meta name="author" content="Vasilache Diana">
+		<meta name="description" content="Virtual fitting room for trying on hats, wigs and helmets.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="infoiasi, cliw, web, project, ar">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+			<!-- include A-Frame obviously -->
+	<script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+	<!-- include ar.js for A-Frame -->
+	<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+	<body>
+		<header>
+			<h1>Online Store HeGe</h1>      
+			<p>Try before buy</p>
+		</header>
+		<nav>
+			<a class="logo" href="index.html">HeGe</a>
+			<a href="women.html">Women's</a>
+			<a href="men.html">Men's</a>
+			<button id="buttonA" onclick="assisInFittingRoom()">Assistant</button>
+		</nav>
+		<main>
+			<div class="column left"></div>
+			<div class="column middle" >
+				<div id="container" style='margin : 0px; overflow: hidden;'>
+					
+				</div>
+			</div>
+			<div class="column right">
+				<h1 id="callAssisHeader"></h1>
+			</div>		
+		</main>
+		<footer>
+	  		<p>Online Store HeGe Copyright</p>
+		</footer>
+		<script src="script.js"></script>
+
+	</body>
+
+</html>
